@@ -1,0 +1,55 @@
+::selection {
+    color: red;
+    background: black;
+  }
+
+.p{
+    margin-left: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.pm{
+    margin-left: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+}
+
+#geralInit{
+    background-color: rgb(160, 0, 0);
+    margin: auto;
+    margin-top: 20px;
+    width: 98%;
+    height: 320px;
+    border-color: white;
+    border-width: 5px;
+    border-style: ridge;
+}
+#geralInitm{
+    background-color: rgb(160, 0, 0);
+    margin: auto;
+    margin-top: 20px;
+    width: 98%;
+    height: 380px;
+    border-color: white;
+    border-width: 5px;
+    border-style: ridge;
+}
+
+#páginas{
+    margin-top:50px;
+}
+
+#disclaimer{
+    margin-top: 50px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#disclaimerm{
+    margin-top: 50px;
+    font-size: 10px;
+}

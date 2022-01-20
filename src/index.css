@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#whole{
+  background-color: rgb(143, 0, 0);
+  height: 40px;
+}
+
+#wholem{
+  background-color: rgb(143, 0, 0);
+  height: 40px;
+}
+
+.buttons{
+  margin-top: 5px;
+  padding-top:5px;
+  background-color: rgb(143, 0, 0);
+  color: white;
+  width: 50px;
+  font-size: 14px;
+  width:100px;
+  font-weight: bold;
+}
+
+.buttonsm{
+  margin-top: 5px;
+  padding-top:5px;
+  background-color: rgb(143, 0, 0);
+  color: white;
+  width: 50px;
+  font-size: 14px;
+  width:100px;
+  font-weight: bold;
+}
+
+#pokemon{
+  margin-left: 100px;
+  text-align: center;
+}
+
+#pokemonm{
+  margin-left: 10px;
+  text-align: center;
+}
+
+#berries{
+  margin-left: 100px;
+  text-align: center;
+}
+
+#berriesm{
+  margin-left: 10px;
+  text-align: center;
+}
+
+#init{
+  margin-left: 31.5%;
+  text-align: center;
+}
+
+#initm{
+  margin-left: 5%;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+#geral{
+    height: 50px;
+    background-color: rgb(143, 0, 0);
+}
+#geralm{
+    height: 100px;
+    background-color: rgb(143, 0, 0);
+}
+
+.buttonsberries{
+    margin-left: 4px;
+    margin-top: 15px;
+    padding-top:5px;
+    background-color: rgb(143, 0, 0);
+    color: white;
+    width: 50px;
+    font-size: 14px;
+    width:100px;
+    font-weight: bold;
+    text-align: center;
+}
+.buttonsberriesm{
+    margin-left: 4px;
+    margin-top: 15px;
+    padding-top:5px;
+    background-color: rgb(143, 0, 0);
+    color: white;
+    width: 50px;
+    font-size: 14px;
+    width:100px;
+    font-weight: bold;
+    text-align: center;
+}
+#firstbuttonm{
+    margin-left: 6%;
+}
+#firstbutton{
+    margin-left: 31%;
+}
+#thirdbuttonm{
+    margin-left: 20%;
+}

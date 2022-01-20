@@ -1,0 +1,49 @@
+.spicy{
+    float: left;
+    margin-top: 1px;
+    margin-left:4px;
+    width: 10%;
+    height: 180px;
+    background-color: rgb(160, 0, 0);
+    border-color: black;
+    border-width: 5px;
+    border-style:groove;
+}
+
+.spicyName{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;   
+}
+
+.spicyBerry{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.spicyM{
+    float: left;
+    margin-top: 1px;
+    margin-left:1px;
+    width: 30%;
+    height: 180px;
+    background-color: rgb(160, 0, 0);
+    border-color: black;
+    border-width: 5px;
+    border-style:groove;
+}
+
+.spicyMName{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;   
+}
+
+.spicyMBerry{
+    margin-left: 5%;
+    width: 90%;
+}
