@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
 import './fetchBerry.css';
 import BerryCard from './berryCard';
-import { BrowserView, MobileView, isBrowser, isMobile, isDesktop } from "react-device-detect";
+import { isMobile, isDesktop } from 'react-device-detect';
+/*
+Removing unused imports, but keeping refference to help tracking improvement
+import { BrowserView, MobileView, isBrowser } from "react-device-detect";
+NOTE: Imports with "" instead of ''
+*/
 
 class FetchBerry extends React.Component {
     state = {

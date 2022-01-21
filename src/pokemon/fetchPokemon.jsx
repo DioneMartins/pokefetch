@@ -1,8 +1,22 @@
-import React from "react";
-import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
+import React from 'react';
 import './fetchBrowser.css';
 import './fetchMobile.css';
-import { BrowserView, MobileView, isBrowser, isMobile, isDesktop } from "react-device-detect";
+import { isMobile, isDesktop } from 'react-device-detect';
+/*
+Removing unused imports, but keeping refference to help tracking improvement
+import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
+import { BrowserView, MobileView, isBrowser } from "react-device-detect";
+NOTE: Imports with "" instead of ''
+*/
+/*
+Fixing console errors and warnings, but keeping refference to help tracking improvement
+Expect default when using switch case
+Expect break statement before case
+Use SetState(), don't mutate state directly
+<img> needs alt
+Used == instead of ===
+<t> is not recognized. Left as is to not have to deal with CSS. Will fix in new version
+*/
 
 class FetchPokemon extends React.Component {
     state = {
@@ -36,12 +50,17 @@ class FetchPokemon extends React.Component {
 
         const split1 = this.state.poke.split(' ');
         switch (split1.length) {
+            default:
+                this.fetchIt();
+            break;
             case 2:
-                this.state.poke = split1[0] + "-" + split1[1];
+                this.setState({ poke:  split1[0] + "-" + split1[1]});
                 this.fetchIt();
+            break;
             case 3:
-                this.state.poke = split1[0] + "-" + split1[1] + "-" + split1[2];
+                this.setState({ poke: split1[0] + "-" + split1[1] + "-" + split1[2] })
                 this.fetchIt();
+            break;
         }
     }
 
@@ -52,7 +71,7 @@ class FetchPokemon extends React.Component {
     }
 
     handleChange(event) {
-        this.state.loading = true;
+        this.setState({ loading: true })
         var ptemp = event.target.value.toLowerCase();
         this.setState({ poke: ptemp });
     }
@@ -91,8 +110,8 @@ class FetchPokemon extends React.Component {
                                 <div>
                                     <t id="n" className="caption">Normal</t>
                                     <t id="s" className="caption">Shiny</t>
-                                    <img id="imgB" src={this.state.nspritelink + this.state.idp + ".png"} />
-                                    <img id="imgB" src={this.state.sspritelink + this.state.idp + ".png"} />
+                                    <img alt="normal sprite" id="imgB" src={this.state.nspritelink + this.state.idp + ".png"} />
+                                    <img alt="shiny sprite" id="imgB" src={this.state.sspritelink + this.state.idp + ".png"} />
                                 </div>
                                 <p id="PokeNameB">{this.state.nome.name}</p>
                                 <p id="PokeIDB"> ID: {this.state.idp}</p>
@@ -114,9 +133,9 @@ class FetchPokemon extends React.Component {
                     </div>
 
                     <div id="loadngotM">{
-                        (this.state.poke == 0) ?
+                        (this.state.poke === 0) ?
                             <div className="pokecardM">
-                                <img id="imgM" src={this.state.spritelink + "0.png"} />
+                                <img alt="nenhum pokemon" id="imgM" src={this.state.spritelink + "0.png"} />
                                 <p id="PokeZeroM">Sem pokemon</p>
                             </div>
                             :
@@ -124,8 +143,8 @@ class FetchPokemon extends React.Component {
                                 <div id="loadingM">Carregando...</div>
                                 :
                                 <div id="gotM" className="pokecardM">
-                                    <img id="imgM" src={this.state.nspritelink + this.state.idp + ".png"} />
-                                    <img id="imgB" src={this.state.sspritelink + this.state.idp + ".png"} />
+                                    <img alt="normal sprite" id="imgM" src={this.state.nspritelink + this.state.idp + ".png"} />
+                                    <img alt="shiny sprite" id="imgB" src={this.state.sspritelink + this.state.idp + ".png"} />
                                     <p id="PokeNameM">{this.state.nome.name}</p>
                                     <p id="PokeIDM"> ID: {this.state.idp}</p>
                                 </div>

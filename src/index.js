@@ -5,8 +5,13 @@ import reportWebVitals from './reportWebVitals';
 import FetchPokemon from './pokemon/fetchPokemon';
 import FetchBerry from './berries/fetchBerry';
 import Init from './init/init';
+import { isBrowser, isMobile } from 'react-device-detect';
+/*
+Removing unused imports, but keeping refference to help tracking improvement
 import reactDom from 'react-dom';
-import { BrowserView, MobileView, isBrowser, isMobile, isDesktop } from "react-device-detect";
+import { BrowserView, MobileView,, isDesktop } from 'react-device-detect';
+NOTE: Imports with "" instead of ''
+*/
 
 class PageSwitcher extends React.Component {
   constructor() {
