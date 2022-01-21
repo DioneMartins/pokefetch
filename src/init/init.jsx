@@ -1,16 +1,6 @@
 import React from 'react';
 import './init.css';
 import { isBrowser, isMobile } from 'react-device-detect';
-/*
-Removing unused imports, but keeping refference to help tracking improvement
-import { Component } from 'react';
-import { BrowserView, MobileView, isDesktop } from "react-device-detect";
-NOTE: Imports with "" instead of ''
-*/
-/*
-Fixing console errors and warnings, but keeping refference to help tracking improvement
-<t> não é reconhecido. substituindo por <p>
-*/
 
 class Init extends React.Component {
     state = {}

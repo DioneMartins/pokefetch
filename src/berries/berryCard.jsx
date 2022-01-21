@@ -1,17 +1,6 @@
 import React from 'react';
 import './berryCard.css';
 import { isBrowser, isMobile } from 'react-device-detect';
-/*
-Removing unused imports, but keeping refference to help tracking improvement
-import { BrowserView, MobileView, isDesktop } from 'react-device-detect';
-NOTE: Imports with "" instead of ''
-*/
-/*
-Fixing console errors and warnings, but keeping refference to help tracking improvement
-Using var instead of let led to multiple warnings that such variable was already defined
-Expect default when using switch case
-Images need alt attribute
-*/
 
 class BerryCard extends React.Component {
     state = {

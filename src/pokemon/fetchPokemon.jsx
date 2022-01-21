@@ -2,21 +2,6 @@ import React from 'react';
 import './fetchBrowser.css';
 import './fetchMobile.css';
 import { isMobile, isDesktop } from 'react-device-detect';
-/*
-Removing unused imports, but keeping refference to help tracking improvement
-import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
-import { BrowserView, MobileView, isBrowser } from "react-device-detect";
-NOTE: Imports with "" instead of ''
-*/
-/*
-Fixing console errors and warnings, but keeping refference to help tracking improvement
-Expect default when using switch case
-Expect break statement before case
-Use SetState(), don't mutate state directly
-<img> needs alt
-Used == instead of ===
-<t> is not recognized. Left as is to not have to deal with CSS. Will fix in new version
-*/
 
 class FetchPokemon extends React.Component {
     state = {
